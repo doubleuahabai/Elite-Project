@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bright-purple: #CC00FF;
+  --dark-grey: #303030;
+  --muted-grey: #5C5D5E;
+}
+
+@layer base {
+  input, select {
+    @apply border-gray-300 rounded-md shadow-sm;
+  }
+}
+
+/* Chatbot Styles */
+.voiceflow-chat {
+  background-color: var(--dark-grey);
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.vfrc-header {
+  background-color: var(--bright-purple);
+  color: #ffffff;
+  width: 100%;
+  padding: 7px 10px;
+  text-align: center;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.vfrc-assistant-info--title {
+  color: #ffffff;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.vfrc-assistant-info--description {
+  color: #ffffff;
+  font-size: 1.1rem;
+}
+
+.vfrc-chat {
+  background-color: var(--dark-grey);
+  padding: 20px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.vfrc-message {
+  display: inline-block;
+  padding: 10px 15px;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  max-width: 100%;
+}
+
+.vfrc-system-response .vfrc-message {
+  background-color: #FFCC99;
+  color: #333333;
+}
+
+.vfrc-user-response .vfrc-message {
+  background-color: var(--bright-purple);
+  color: #ffffff;
+}
